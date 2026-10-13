@@ -1,0 +1,9 @@
+{
+  "security": {
+    "environmentVariableRedaction": {
+      "allowed": [
+        "KLISTEN_DEADLINEENGINE_API_KEY"
+      ]
+    }
+  }
+}

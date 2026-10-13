@@ -1,0 +1,26 @@
+{
+  "name": "klisten-deadlineengine",
+  "version": "0.1.0",
+  "description": "Calculate and compare indicative UTC dates from explicit intervals.",
+  "mcpServers": {
+    "deadlineengine": {
+      "httpUrl": "https://api.klisten.co.kr/mcp/deadlineengine",
+      "headers": {
+        "Authorization": "Bearer ${KLISTEN_DEADLINEENGINE_API_KEY}"
+      },
+      "timeout": 20000,
+      "includeTools": [
+        "deadline_compute",
+        "deadline_diff"
+      ]
+    }
+  },
+  "settings": [
+    {
+      "name": "DeadlineEngine API key",
+      "description": "Your own dedicated least-privilege key; never enter it in chat.",
+      "envVar": "KLISTEN_DEADLINEENGINE_API_KEY",
+      "sensitive": true
+    }
+  ]
+}
